@@ -8,32 +8,25 @@
     <title>Containerization</title>
   </head>
   <body>
-      <header>
-        <h1>Plants in Containers</h1>
-        <h5>In software systems, Containerization is a lightweight alternative to full machine virtualization,
-        but how does this apply to plants? Plants in containers or potted plants can ... Here 
-        are some of my container plants.
-        </h5>
-      </header>
     <div id="root">
-      <h4>Create new Container</h4>
+      <h3>Edit Container</h3>
 
-      <form action="/api/containers" method="POST">
-        <input type="text" placeholder="Container Title" name="title" />
+      <form>
+        <input type="text" placeholder="Title" name="title" />
         <input type="text" placeholder="Image" name="image" />
         <textarea
           type="text"
           placeholder="Description"
           name="description"
         ></textarea>
-        <button type="submit">Submit</button>
+        <button onclick="updateContainer()">Update</button>
       </form>
-      <hr>
     </div>
+   
 
     <script src="js/scripts.js"></script>
     <script>
-      homepage();
+        detail();
     </script>
   </body>
 </html>

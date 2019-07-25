@@ -11,9 +11,21 @@ div {
   background-color: #fff;
 }
 
+a{
+  color: #2c56cc;
+  text-decoration: none;
+}
+
 img {
   max-width: 200px;
-}
+  float: left;
+  margin-right: 1.5rem;
+ }
+ .contain{
+   width:200px;
+   height:75px;
+   object-fit:cover;
+ }
 input,
 textarea {
   font-size: 1rem;
@@ -21,7 +33,14 @@ textarea {
   margin: 1rem;
   width: 90%;
   padding: 0.5rem;
+  
 }
+
+textarea{
+  height: 80px;
+  /*color: rgb(232, 238, 236); */
+}
+
 button {
   color: #fff;
   font-size: 1rem;
@@ -29,3 +48,9 @@ button {
   margin: 0 1rem;
   background: #007eb6;
 }
+
+.del {
+  width: 90%;
+  display: inline-block;
+  text-align: right;
+ }
